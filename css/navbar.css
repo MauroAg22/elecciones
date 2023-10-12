@@ -1,0 +1,30 @@
+.navbar-text {
+    color: #fff;
+}
+
+.cursor-default {
+    cursor: default;
+}
+
+.navbar-fixed-space-bottom,
+.navbar-fixed-space-top {
+    height: 100px;
+}
+
+@media (max-width: 599px) {
+    .navbar-fixed-space-bottom{
+        height: 128px;
+    }
+}
+
+@media (max-width: 316px) {
+    .navbar-fixed-space-top {
+        height: 120px;
+    }
+}
+
+@media (max-width: 327px) {
+    .navbar-fixed-space-bottom {
+        height: 146px;
+    }
+}
