@@ -12,3 +12,12 @@
     transition: calc(0.2s);
     cursor: pointer;
 }
+
+@media (max-width: 767px) {
+    .img-presidente {
+        min-width: 0;
+        max-width: none;
+        width: 50vw;
+    }
+
+}
