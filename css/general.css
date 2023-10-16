@@ -2,7 +2,50 @@
     font-family: 'Nunito', sans-serif !important;
 }
 
-.row {
-    margin-right: 0;
+html, body {
+    min-height: 100%;
 }
 
+body {
+    background-color: #ededed;
+}
+
+.main {
+    min-height: calc(100vh - 212px);
+    box-sizing: border-box;
+    margin: 32px 128px;
+}
+
+h1 {
+    font-size: xx-large;
+    margin: 8px 0;
+    text-align: center;
+    user-select: none;
+}
+
+@media (max-width: 900px) {
+
+    .main {
+        margin: 16px;
+    }
+
+    .container-votos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header, .footer {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .img-voto {
+        max-width: none;
+        width: 74vw;
+    }
+
+    .boton {
+        width: 90%;
+        margin: 0 30px;
+    }
+}
