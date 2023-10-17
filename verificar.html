@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
-<!-- data-bs-theme="dark" -->
-<html lang="es" data-bs-theme="dark">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -14,8 +13,10 @@
     <link rel="stylesheet" href="css/reset.css">
     <!-- Mis estilos -->
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/votar.css">
+    <link rel="stylesheet" href="css/verificar.css">
     <link rel="stylesheet" href="css/navbar.css">
+
+    <link rel="stylesheet" href="css/modal.css">
 
     <title>Elecciones 2023</title>
 </head>
@@ -34,8 +35,30 @@
     <!-- Contenido principal de la página -->
     <main class="main">
         <section>
-
+            <form>
+                <div class="section-form">
+                    <h1>Buscar por padrón</h1>
+                    <div class="verificar-padron fondo">
+                        <label>
+                            <span style="user-select: none;">DNI:</span>
+                            <input type="text" name="dni" id="dni" placeholder="Ingrese su DNI" pattern="^[1-9][0-9]{6,7}$" autocomplete="off" required>
+                        </label>
+                    </div>
+                    <div class="div-boton">
+                        <button class="boton">VERIFICAR</button>
+                    </div>
+                </div>
+            </form>
         </section>
+        <!-- Botón para abrir el modal -->
+        <button id="openModalBtn">Abrir Modal</button>
+        <!-- El modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModalBtn">&times;</span>
+                <p>Contenido del modal va aquí.</p>
+            </div>
+        </div>
     </main>
 
     <!-- Pie de página - Fixed bottom -->
@@ -54,6 +77,10 @@
             </span>
         </div>
     </footer>
+
+
+
+    <script src="js/modal.js"></script>
 </body>
 
 </html>

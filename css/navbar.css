@@ -32,10 +32,12 @@
 }
 
 .footer>div {
-    font-size: large;
-
     display: flex;
     gap: 8px 16px;
+}
+
+.footer>div>span {
+    font-size: large;
 }
 
 @media (max-width: 910px) {
@@ -65,6 +67,10 @@
 }
 
 @media (max-width: 600px) {
+    .header>span {
+        font-size: large;
+    }
+
     .footer {
         height: 128px;
         justify-content: space-around;
@@ -75,5 +81,9 @@
     .footer>div {
         flex-direction: column;
         text-align: center;
+    }
+
+    .footer>div>span {
+        font-size: medium;
     }
 }

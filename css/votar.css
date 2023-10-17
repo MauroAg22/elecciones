@@ -5,12 +5,9 @@
 }
 
 .container-votos {
-    padding: 48px 0;
-    background-color: #fff;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 32px 0;
-    border-radius: 16px;
 }
 
 .box-voto {
@@ -35,26 +32,6 @@
     transform: scale(1.02);
     transition: calc(0.2s);
     cursor: pointer;
-}
-
-.boton {
-    padding: 16px 40px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    font-size: x-large;
-    border-radius: 5px;
-    cursor: pointer;
-    user-select: none;
-}
-
-.boton:hover {
-    background-color: #45a049;
-}
-
-.div-voton {
-    display: flex;
-    justify-content: center;
 }
 
 @media (max-width: 900px) {
