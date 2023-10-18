@@ -38,10 +38,22 @@
     .section-form>div>label>span {
         width: auto;
     }
+
+    .main {
+        margin: 32px 64px;
+    }
 }
 
 @media (max-width: 600px) {
     input[type="text"] {
-        width: auto;
+        width: 40vw;
+    }
+
+    .fondo {
+        border-radius: 0;
+    }
+
+    .main {
+        margin: 32px 0;
     }
 }
